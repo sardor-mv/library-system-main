@@ -1,0 +1,31 @@
+library:
+  domain:
+
+  port:
+
+debug: true
+trace: false
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure: info
+
+## Embedded Tomcat
+server:
+
+  port: 8183
+
+  servlet:
+    context-path:
+    session:
+      timeout: 15m
+
+spring:
+
+  banner:
+    location: classpath:banner-dev.txt
+
+  datasource:
+    url: "jdbc:postgresql://localhost:5433/library1"
+    username: steve
+    password: steve7121

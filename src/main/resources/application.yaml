@@ -1,0 +1,17 @@
+#Application configuration files
+
+application:
+
+spring :
+  main:
+    allow-bean-definition-overriding: true
+
+
+  mustache:
+    enabled: true
+    prefix: classpath:/templates/
+    request-context-attribute: requestContext
+    suffix: .html
+
+    mvc:
+      static-path-pattern: /resources/**
